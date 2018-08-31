@@ -7,6 +7,7 @@ import time
 def instantiate_threads(arguments):
     print('instantiating thread(s)')
     cycletime = arguments.cycle
+    rt.newthread('veryfast', 50000)
     rt.newthread('st', int(cycletime), fp=True)
 
 
@@ -25,7 +26,6 @@ def instantiate_components(arguments):
     print('instantiating components')
     setup_lcec(configfile)
     # write lcec-read-all first
-    #hal.addf('lcec.read-all', st)
     hal.addf('lcec.0.read', st)
     # write lcec-write-all last
     hal.addf('lcec.0.write', st)
