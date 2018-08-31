@@ -1,5 +1,5 @@
 <masters>
-  <master idx="0" appTimePeriod="500000" refClockSyncCycles="-1">
+  <master idx="0" appTimePeriod="250000" refClockSyncCycles="-1">
     <slave idx="0" type="EK1100">
     </slave>
     <slave idx="1" type="EL1008">
